@@ -45,13 +45,13 @@ public class Main {
                     if ((Math.pow(firstStorona, 2) + Math.pow(secondStorona, 2)) == Math.pow(thirdStorona, 2)) {
                         System.out.print("a, b и c являются сторонами прямоугольного треугольника");
                     }
-                    // Проверка, является ли треугольник равнобедренным
-                    else if (firstStorona == secondStorona || secondStorona == thirdStorona || thirdStorona == firstStorona) {
-                        System.out.print("a, b и c являются сторонами равнобедренного треугольника");
-                    }
                     // Проверка, является ли треугольник равносторонним
                     else if (firstStorona == secondStorona && secondStorona == thirdStorona) {
                         System.out.print("a, b и c являются сторонами равностороннего треугольника");
+                    }
+                    // Проверка, является ли треугольник равнобедренным
+                    else if (firstStorona == secondStorona || secondStorona == thirdStorona || thirdStorona == firstStorona) {
+                        System.out.print("a, b и c являются сторонами равнобедренного треугольника");
                     }
                     // Проверка, является ли треугольник невозможным
                     else if (firstStorona + secondStorona <= thirdStorona || secondStorona + thirdStorona <= firstStorona || thirdStorona + firstStorona <= secondStorona) {
